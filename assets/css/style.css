@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2ac9bf;
+    --secondary-color: #def6f5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+.main-content {
+    max-width: calc(100% - 48px);
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    min-width: 186px;
+    height: 68px;
+    padding: 0 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    border-radius: 14px;
+    background: var(--primary-color);
+}
+
+.btn:hover {
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    color: var(--primary-color);
+}
+
+.decs-lv1 {
+    font-size: 1.8rem;
+}
+
+.desc-lv3 {
+    font-size: 1.4rem;
+}
+
+/* Header */
+.header {
+    background: #fff;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -44px;
+    z-index: 1;
+}
+
+.header .body-header {
+    display: flex;
+    align-items: center;
+    padding: 52px 0 8px;
+}
+
+.body-header .nav {
+    margin-left: auto;
+    display: flex;
+}
+
+.body-header .nav a {
+    color: #2f3a3b;
+    padding: 8px 20px;
+    border-radius: 999px;
+}
+
+.body-header .nav .active,
+.body-header .nav li:hover a {
+    text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+    background-color: var(--secondary-color);
+}
+
+.header .action {
+    margin-left: 135px;
+    display: flex;
+    gap: 24px;
+}
+
+.body-header .action .sign-in {
+    color: #494949;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 22px;
+    border-radius: 6px;
+}
+
+.body-header .action .sign-in:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 0.65px var(--primary-color),
+        0 0 0.65px var(--primary-color);
+}
+
+.body-header .action .sign-up-btn {
+    min-width: 108px;
+    line-height: 48px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.body-header .action .sign-up-btn:hover {
+    background: #1ebfc1;
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    padding: 42px 0 22px;
+    background: #fff;
+}
+
+.hero .body-hero {
+    display: flex;
+    align-items: center;
+}
+
+/* Hero Left */
+.hero .content-block {
+    width: 45%;
+}
+
+.hero .content-block .title {
+    color: #767e7e;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.hero .content-block .heading {
+    color: #0d1111;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.16; /* 116.129% */
+    margin-bottom: 46px;
+}
+
+.hero .content-block .desc-lv1 {
+    width: 70%;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.78; /* 177.778% */
+}
+.hero .content-block .no-wrap {
+    white-space: nowrap;
+}
+
+.hero .content-block .cpa-group {
+    display: flex;
+    gap: 50px;
+    margin-top: 52px;
+}
+
+.hero .cpa-group .play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.hero .cpa-group .play-btn:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Hero Right */
+.hero .media-block {
+    width: 55%;
+}
+
+.media-block {
+    position: relative;
+}
+
+.media-block .our-student {
+    background: var(--secondary-color);
+    width: 576px;
+    height: 613px;
+    object-fit: cover;
+    display: block;
+    float: right;
+}
+
+.media-block .our-courses {
+    display: flex;
+    position: absolute;
+    background: #fff;
+    top: 149px;
+    left: -40px;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+}
+
+.media-block .our-courses .book {
+    position: relative;
+}
+
+.media-block .our-courses .book .book-icon {
+    position:absolute;
+}
+
+.media-block .our-courses .book .label {
+    position:absolute;
+}
+
+.media-block .sche {
+    position: absolute;
+    bottom: 64px;
+    left: -60px;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
