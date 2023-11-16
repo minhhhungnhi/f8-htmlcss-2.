@@ -132,7 +132,7 @@ a {
 
 /* Hero */
 .hero {
-    padding: 42px 0 22px;
+    padding: 42px 0 0;
     background: #fff;
 }
 
@@ -195,23 +195,21 @@ a {
 /* Hero Right */
 .hero .media-block {
     width: 55%;
-}
-
-.media-block {
     position: relative;
 }
 
-.media-block .our-student {
-    background: var(--secondary-color);
+.media-block .img {
+    display: block;
     width: 576px;
     height: 613px;
     object-fit: cover;
-    display: block;
+    border-radius: 20px;
+    background: var(--secondary-color);
     float: right;
 }
 
 .media-block .our-courses {
-    display: flex;
+    display: inline-flex;
     position: absolute;
     background: #fff;
     top: 149px;
@@ -221,16 +219,19 @@ a {
     border-radius: 18px;
 }
 
-.media-block .our-courses .book {
+.media-block .our-courses .book-icon {
     position: relative;
+    z-index: 1;
 }
 
-.media-block .our-courses .book .book-icon {
-    position:absolute;
+.media-block .book-icon .label {
+    position: absolute;
+    top: 25px;
+    text-align: center;
 }
 
 .media-block .our-courses .book .label {
-    position:absolute;
+    position: absolute;
 }
 
 .media-block .sche {
