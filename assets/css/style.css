@@ -146,6 +146,7 @@ a {
 .hero {
     padding: 42px 0 0;
     background: #fff;
+    height: calc(100vh - 109.6px);
 }
 
 .hero .body-hero {
@@ -208,18 +209,16 @@ a {
 .hero .media-block {
     width: 55%;
     position: relative;
-    border: 3px solid #4caf50;
 }
 
 .media-block .img {
-    --width-hero: 576px;
     display: block;
+    margin-left: auto;
     width: var(--width-hero);
-    height: calc(var(--width-hero) / 0.913);
+    height: calc(100vh - 109.6px - 42px);
     object-fit: cover;
     border-radius: 20px;
     background: var(--secondary-color);
-    float: right;
 }
 
 .media-block .our-courses {
@@ -232,6 +231,7 @@ a {
     top: 149px;
     left: 25px;
     border-radius: 18px;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
 }
 
 .media-block .our-courses .book-icon {
@@ -267,10 +267,8 @@ a {
     left: 0;
     border-radius: 24px;
     background: #fff;
-    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .media-block .sche li{
     text-align:center ;
@@ -281,11 +279,40 @@ a {
 }
 
 .media-block .active-student {
+    width: 207px;
+    padding: 17px 35px;
     display: inline-block;
     position: absolute;
     right: 45px;
     bottom: 41px;
-    padding: 17px 35px;
-    background: #e61e1e;
+    background: #fff;
     border-radius: 24px;
+    text-align: left;
+}
+
+.media-block .active-student .list-student {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.media-block .active-student .avatar {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-left: -10px;
+}
+
+.media-block .active-student .avatar:first-child {
+    margin-left: 0;
+}
+
+.media-block .active-student .avatar:nth-child(5) {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
 }
