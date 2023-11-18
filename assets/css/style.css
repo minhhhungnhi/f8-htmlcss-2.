@@ -281,7 +281,11 @@ a {
 }
 
 .media-block .active-student {
-    /* position: absolute; */
+    display: inline-block;
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
     padding: 17px 35px;
     background: #e61e1e;
+    border-radius: 24px;
 }
