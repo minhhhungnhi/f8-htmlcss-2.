@@ -7,6 +7,11 @@
     --secondary-color: #def6f5;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -551,8 +556,8 @@ a {
 /* ================== STATISTIC ================== */
 
 .stat {
-    margin-top: 60px;
-    padding: 40px 0 0;
+    margin-top: 40px;
+    padding: 60px 0 0;
 }
 .body-stat {
     display: flex;
@@ -717,7 +722,7 @@ a {
 .get-start {
     margin-top: 130px;
     padding: 76px 0 86px;
-    background-color: #DEF6F5;
+    background-color: #def6f5;
 }
 
 .get-start .body-get-start {
@@ -726,7 +731,6 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .get-start .body-get-start .promote {
     width: 420px;
@@ -778,8 +782,7 @@ a {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
-    color: #2E2E2E;
-
+    color: #2e2e2e;
 }
 
 .footer .row .column li {
@@ -788,5 +791,9 @@ a {
 
 .footer .row .column li a {
     color: #535353;
+    transition: color 0.3s;
 }
 
+.footer .row .column li a:hover {
+    color: var(--primary-color);
+}
