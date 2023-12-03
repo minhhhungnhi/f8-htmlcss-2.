@@ -743,7 +743,7 @@ a {
 
 /* ================== FOOTER ================== */
 .footer {
-    padding: 130px;
+    padding: 130px 0 50px;
 }
 
 .footer .row {
@@ -799,7 +799,7 @@ a {
 }
 
 /* =============== Copy-right ============= */
- .copy-right {
+.copy-right {
     margin-top: 80px;
     text-align: center;
     color: #b0b5b4;
